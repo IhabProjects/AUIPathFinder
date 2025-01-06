@@ -111,6 +111,33 @@ export function getProgramScores(type: 'major' | 'minor' | 'shss', answers: Reco
       .sort((a, b) => b.score - a.score);
   }
 
+  if (type === 'minor') {
+    const scores = { CS: 0, MATH: 0, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 };
+    let totalPossibleScore = 0;
+
+    // Calculate scores and maximum possible score
+    Object.entries(answers).forEach(([questionId, value]) => {
+      const question = sbaMinorQuestions.find(q => `question_${q.id}` === questionId);
+      if (question) {
+        Object.entries(question.scores[value]).forEach(([program, score]) => {
+          scores[program] += score;
+        });
+
+        // Calculate maximum possible score for this question
+        const maxScores = Object.values(question.scores[5]); // Use highest score (5) as reference
+        totalPossibleScore += Math.max(...maxScores);
+      }
+    });
+
+    // Convert to percentages and sort
+    return Object.entries(scores)
+      .map(([program, score]) => ({
+        program,
+        score: Math.round((score / totalPossibleScore) * 100)
+      }))
+      .sort((a, b) => b.score - a.score);
+  }
+
   // For other types, use the existing calculateProgramScores
   const scores = calculateProgramScores(type, answers);
   return Object.entries(scores)

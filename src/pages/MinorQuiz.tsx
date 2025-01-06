@@ -26,10 +26,12 @@ export default function MinorQuiz() {
 
   const handleSliderChange = (value: number) => {
     setSliderValue(value);
-    setAnswers(prev => ({
-      ...prev,
+    const newAnswers = {
+      ...answers,
       [`question_${question.id}`]: value
-    }));
+    };
+    setAnswers(newAnswers);
+    console.log('Current answers:', newAnswers); // For debugging
   };
 
   const handleNext = () => {

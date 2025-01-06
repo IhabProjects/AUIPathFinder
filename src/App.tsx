@@ -12,6 +12,7 @@ import SHSSResults from './pages/SHSSResults';
 import PageTransition from './components/PageTransition';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import DotBackground from './components/DotBackground';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -35,14 +36,17 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-surface-50 flex flex-col">
-        <Header />
-        <main className="container mx-auto py-8 flex-grow">
-          <AnimatedRoutes />
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <div className="relative min-h-screen bg-white">
+      <DotBackground />
+      <Router>
+        <div className="relative min-h-screen flex flex-col bg-transparent">
+          <Header />
+          <main className="container mx-auto py-8 flex-grow">
+            <AnimatedRoutes />
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </div>
   );
 }

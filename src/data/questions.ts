@@ -216,123 +216,183 @@ export const sseQuestions = [
 
 export const sbaMinorQuestions = [
   {
-    id: 'sba1',
-    question: "How interested are you in technology and programming?",
+    id: 'minor1',
+    question: "How interested are you in computer programming and software development?",
     description: "From 1 (Not interested) to 5 (Very interested)",
     scores: {
-      1: { CS: 0, MATH: 1, IS: 1, HRD: 1, OS: 1, COMM: 1, GS: 1, AS: 1, ENG: 1, PL: 1 },
-      2: { CS: 1, MATH: 2, IS: 1, HRD: 1, OS: 1, COMM: 1, GS: 1, AS: 1, ENG: 1, PL: 1 },
-      3: { CS: 3, MATH: 2, IS: 1, HRD: 1, OS: 2, COMM: 1, GS: 0, AS: 0, ENG: 0, PL: 1 },
-      4: { CS: 4, MATH: 3, IS: 0, HRD: 0, OS: 1, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
-      5: { CS: 5, MATH: 3, IS: 0, HRD: 0, OS: 1, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 }
+      1: { CS: 0, MATH: 0, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
+      2: { CS: 3, MATH: 1, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
+      3: { CS: 4, MATH: 2, IS: 1, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 1, PL: 0 },
+      4: { CS: 5, MATH: 2, IS: 1, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 1, PL: 0 },
+      5: { CS: 5, MATH: 3, IS: 1, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 2, PL: 0 }
     }
   },
   {
-    id: 'sba2',
+    id: 'minor2',
     question: "How much do you enjoy mathematical and statistical analysis?",
     description: "From 1 (Dislike) to 5 (Love it)",
     scores: {
-      1: { CS: 1, MATH: 0, IS: 1, HRD: 1, OS: 1, COMM: 1, GS: 1, AS: 1, ENG: 1, PL: 1 },
-      2: { CS: 2, MATH: 1, IS: 1, HRD: 1, OS: 1, COMM: 1, GS: 1, AS: 1, ENG: 1, PL: 1 },
-      3: { CS: 2, MATH: 3, IS: 1, HRD: 1, OS: 2, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 1 },
-      4: { CS: 3, MATH: 4, IS: 0, HRD: 0, OS: 1, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
-      5: { CS: 3, MATH: 5, IS: 0, HRD: 0, OS: 1, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 }
+      1: { CS: 0, MATH: 0, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
+      2: { CS: 1, MATH: 3, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
+      3: { CS: 2, MATH: 4, IS: 1, HRD: 0, OS: 1, COMM: 0, GS: 1, AS: 0, ENG: 1, PL: 1 },
+      4: { CS: 3, MATH: 5, IS: 1, HRD: 0, OS: 1, COMM: 0, GS: 1, AS: 0, ENG: 1, PL: 1 },
+      5: { CS: 3, MATH: 5, IS: 2, HRD: 0, OS: 1, COMM: 0, GS: 1, AS: 0, ENG: 2, PL: 1 }
     }
   },
   {
-    id: 'sba3',
-    question: "How interested are you in global cultures and international business?",
-    description: "From 1 (Local focus) to 5 (Global focus)",
-    scores: {
-      1: { CS: 1, MATH: 1, IS: 0, HRD: 1, OS: 1, COMM: 1, GS: 1, AS: 0, ENG: 1, PL: 1 },
-      2: { CS: 1, MATH: 1, IS: 2, HRD: 1, OS: 1, COMM: 2, GS: 2, AS: 2, ENG: 1, PL: 1 },
-      3: { CS: 0, MATH: 0, IS: 3, HRD: 2, OS: 2, COMM: 2, GS: 2, AS: 3, ENG: 2, PL: 2 },
-      4: { CS: 0, MATH: 0, IS: 4, HRD: 2, OS: 2, COMM: 3, GS: 3, AS: 4, ENG: 2, PL: 2 },
-      5: { CS: 0, MATH: 0, IS: 5, HRD: 2, OS: 2, COMM: 3, GS: 3, AS: 5, ENG: 2, PL: 2 }
-    }
-  },
-  {
-    id: 'sba4',
-    question: "How much do you enjoy studying human behavior and psychology?",
+    id: 'minor3',
+    question: "How interested are you in international business and global markets?",
     description: "From 1 (Not interested) to 5 (Very interested)",
     scores: {
-      1: { CS: 2, MATH: 2, IS: 1, HRD: 0, OS: 0, COMM: 0, GS: 1, AS: 1, ENG: 1, PL: 0 },
-      2: { CS: 1, MATH: 1, IS: 2, HRD: 2, OS: 2, COMM: 2, GS: 2, AS: 2, ENG: 1, PL: 2 },
-      3: { CS: 0, MATH: 0, IS: 2, HRD: 3, OS: 3, COMM: 3, GS: 3, AS: 2, ENG: 2, PL: 4 },
-      4: { CS: 0, MATH: 0, IS: 2, HRD: 4, OS: 4, COMM: 4, GS: 3, AS: 2, ENG: 2, PL: 5 },
-      5: { CS: 0, MATH: 0, IS: 2, HRD: 5, OS: 4, COMM: 4, GS: 4, AS: 2, ENG: 2, PL: 5 }
+      1: { CS: 0, MATH: 0, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
+      2: { CS: 0, MATH: 0, IS: 3, HRD: 0, OS: 1, COMM: 1, GS: 3, AS: 3, ENG: 1, PL: 1 },
+      3: { CS: 0, MATH: 1, IS: 4, HRD: 1, OS: 2, COMM: 2, GS: 4, AS: 4, ENG: 1, PL: 2 },
+      4: { CS: 0, MATH: 1, IS: 5, HRD: 1, OS: 2, COMM: 2, GS: 5, AS: 5, ENG: 2, PL: 2 },
+      5: { CS: 0, MATH: 2, IS: 5, HRD: 2, OS: 3, COMM: 3, GS: 5, AS: 5, ENG: 2, PL: 3 }
     }
   },
   {
-    id: 'sba5',
+    id: 'minor4',
+    question: "How interested are you in human behavior and psychology?",
+    description: "From 1 (Not interested) to 5 (Very interested)",
+    scores: {
+      1: { CS: 0, MATH: 0, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
+      2: { CS: 0, MATH: 0, IS: 1, HRD: 3, OS: 3, COMM: 2, GS: 1, AS: 1, ENG: 1, PL: 3 },
+      3: { CS: 0, MATH: 0, IS: 2, HRD: 4, OS: 4, COMM: 3, GS: 2, AS: 2, ENG: 2, PL: 4 },
+      4: { CS: 0, MATH: 0, IS: 2, HRD: 5, OS: 5, COMM: 3, GS: 2, AS: 2, ENG: 2, PL: 5 },
+      5: { CS: 0, MATH: 0, IS: 3, HRD: 5, OS: 5, COMM: 4, GS: 3, AS: 3, ENG: 3, PL: 5 }
+    }
+  },
+  {
+    id: 'minor5',
     question: "How interested are you in communication and media studies?",
     description: "From 1 (Not interested) to 5 (Very interested)",
     scores: {
-      1: { CS: 2, MATH: 2, IS: 1, HRD: 1, OS: 1, COMM: 0, GS: 1, AS: 1, ENG: 1, PL: 1 },
-      2: { CS: 1, MATH: 1, IS: 2, HRD: 2, OS: 2, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 2 },
-      3: { CS: 0, MATH: 0, IS: 2, HRD: 2, OS: 2, COMM: 3, GS: 2, AS: 2, ENG: 3, PL: 2 },
-      4: { CS: 0, MATH: 0, IS: 2, HRD: 2, OS: 2, COMM: 4, GS: 3, AS: 2, ENG: 4, PL: 2 },
-      5: { CS: 0, MATH: 0, IS: 2, HRD: 2, OS: 2, COMM: 5, GS: 3, AS: 2, ENG: 5, PL: 2 }
+      1: { CS: 0, MATH: 0, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
+      2: { CS: 0, MATH: 0, IS: 1, HRD: 1, OS: 1, COMM: 3, GS: 1, AS: 1, ENG: 3, PL: 1 },
+      3: { CS: 0, MATH: 0, IS: 2, HRD: 2, OS: 2, COMM: 4, GS: 2, AS: 2, ENG: 4, PL: 2 },
+      4: { CS: 0, MATH: 0, IS: 2, HRD: 2, OS: 2, COMM: 5, GS: 2, AS: 2, ENG: 5, PL: 2 },
+      5: { CS: 0, MATH: 0, IS: 3, HRD: 3, OS: 3, COMM: 5, GS: 3, AS: 3, ENG: 5, PL: 3 }
     }
   },
   {
-    id: 'sba6',
-    question: "How interested are you in gender and social equality issues?",
+    id: 'minor6',
+    question: "How interested are you in organizational leadership?",
     description: "From 1 (Not interested) to 5 (Very interested)",
     scores: {
-      1: { CS: 1, MATH: 1, IS: 1, HRD: 1, OS: 1, COMM: 1, GS: 0, AS: 1, ENG: 1, PL: 1 },
-      2: { CS: 1, MATH: 1, IS: 2, HRD: 2, OS: 2, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 2 },
-      3: { CS: 0, MATH: 0, IS: 2, HRD: 3, OS: 3, COMM: 3, GS: 4, AS: 2, ENG: 2, PL: 3 },
-      4: { CS: 0, MATH: 0, IS: 2, HRD: 3, OS: 3, COMM: 3, GS: 5, AS: 2, ENG: 2, PL: 3 },
-      5: { CS: 0, MATH: 0, IS: 2, HRD: 3, OS: 3, COMM: 3, GS: 5, AS: 2, ENG: 2, PL: 3 }
+      1: { CS: 0, MATH: 0, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
+      2: { CS: 0, MATH: 0, IS: 1, HRD: 3, OS: 3, COMM: 1, GS: 1, AS: 1, ENG: 1, PL: 3 },
+      3: { CS: 0, MATH: 0, IS: 2, HRD: 4, OS: 4, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 4 },
+      4: { CS: 0, MATH: 0, IS: 2, HRD: 5, OS: 5, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 5 },
+      5: { CS: 0, MATH: 0, IS: 3, HRD: 5, OS: 5, COMM: 3, GS: 3, AS: 3, ENG: 3, PL: 5 }
     }
   },
   {
-    id: 'sba7',
-    question: "How interested are you in African studies and culture?",
+    id: 'minor7',
+    question: "How interested are you in global affairs and cultural studies?",
     description: "From 1 (Not interested) to 5 (Very interested)",
     scores: {
-      1: { CS: 1, MATH: 1, IS: 1, HRD: 1, OS: 1, COMM: 1, GS: 1, AS: 0, ENG: 1, PL: 1 },
-      2: { CS: 0, MATH: 0, IS: 2, HRD: 1, OS: 1, COMM: 1, GS: 2, AS: 2, ENG: 1, PL: 1 },
-      3: { CS: 0, MATH: 0, IS: 2, HRD: 1, OS: 1, COMM: 2, GS: 2, AS: 4, ENG: 1, PL: 1 },
-      4: { CS: 0, MATH: 0, IS: 2, HRD: 1, OS: 1, COMM: 2, GS: 2, AS: 5, ENG: 1, PL: 1 },
-      5: { CS: 0, MATH: 0, IS: 3, HRD: 1, OS: 1, COMM: 2, GS: 2, AS: 5, ENG: 1, PL: 1 }
+      1: { CS: 0, MATH: 0, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
+      2: { CS: 0, MATH: 0, IS: 3, HRD: 1, OS: 1, COMM: 2, GS: 3, AS: 3, ENG: 2, PL: 1 },
+      3: { CS: 0, MATH: 0, IS: 4, HRD: 2, OS: 2, COMM: 3, GS: 4, AS: 4, ENG: 3, PL: 2 },
+      4: { CS: 0, MATH: 0, IS: 5, HRD: 2, OS: 2, COMM: 3, GS: 5, AS: 5, ENG: 3, PL: 2 },
+      5: { CS: 0, MATH: 0, IS: 5, HRD: 3, OS: 3, COMM: 4, GS: 5, AS: 5, ENG: 4, PL: 3 }
     }
   },
   {
-    id: 'sba8',
-    question: "How much do you enjoy reading and analyzing literature?",
-    description: "From 1 (Not at all) to 5 (Love it)",
-    scores: {
-      1: { CS: 1, MATH: 1, IS: 1, HRD: 1, OS: 1, COMM: 1, GS: 1, AS: 1, ENG: 0, PL: 1 },
-      2: { CS: 1, MATH: 1, IS: 2, HRD: 1, OS: 1, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 1 },
-      3: { CS: 0, MATH: 0, IS: 2, HRD: 1, OS: 1, COMM: 3, GS: 2, AS: 2, ENG: 4, PL: 2 },
-      4: { CS: 0, MATH: 0, IS: 2, HRD: 1, OS: 1, COMM: 3, GS: 2, AS: 2, ENG: 5, PL: 2 },
-      5: { CS: 0, MATH: 0, IS: 2, HRD: 1, OS: 1, COMM: 4, GS: 2, AS: 2, ENG: 5, PL: 2 }
-    }
-  },
-  {
-    id: 'sba9',
-    question: "How interested are you in organizational behavior and management?",
+    id: 'minor8',
+    question: "How interested are you in data analysis and research methods?",
     description: "From 1 (Not interested) to 5 (Very interested)",
     scores: {
-      1: { CS: 1, MATH: 1, IS: 1, HRD: 1, OS: 0, COMM: 1, GS: 1, AS: 1, ENG: 1, PL: 1 },
-      2: { CS: 1, MATH: 1, IS: 2, HRD: 2, OS: 2, COMM: 1, GS: 1, AS: 1, ENG: 1, PL: 2 },
-      3: { CS: 0, MATH: 0, IS: 2, HRD: 3, OS: 4, COMM: 2, GS: 1, AS: 1, ENG: 1, PL: 3 },
-      4: { CS: 0, MATH: 0, IS: 2, HRD: 4, OS: 5, COMM: 2, GS: 1, AS: 1, ENG: 1, PL: 4 },
-      5: { CS: 0, MATH: 0, IS: 2, HRD: 4, OS: 5, COMM: 2, GS: 1, AS: 1, ENG: 1, PL: 4 }
+      1: { CS: 0, MATH: 0, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
+      2: { CS: 3, MATH: 3, IS: 1, HRD: 1, OS: 1, COMM: 1, GS: 1, AS: 1, ENG: 1, PL: 1 },
+      3: { CS: 4, MATH: 4, IS: 2, HRD: 2, OS: 2, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 2 },
+      4: { CS: 5, MATH: 5, IS: 2, HRD: 2, OS: 2, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 2 },
+      5: { CS: 5, MATH: 5, IS: 3, HRD: 3, OS: 3, COMM: 3, GS: 3, AS: 3, ENG: 3, PL: 3 }
     }
   },
   {
-    id: 'sba10',
-    question: "How interested are you in leadership and personal development?",
+    id: 'minor9',
+    question: "How interested are you in project management?",
     description: "From 1 (Not interested) to 5 (Very interested)",
     scores: {
-      1: { CS: 1, MATH: 1, IS: 1, HRD: 1, OS: 1, COMM: 1, GS: 1, AS: 1, ENG: 1, PL: 0 },
-      2: { CS: 1, MATH: 1, IS: 2, HRD: 2, OS: 2, COMM: 2, GS: 1, AS: 1, ENG: 1, PL: 2 },
-      3: { CS: 0, MATH: 0, IS: 2, HRD: 3, OS: 3, COMM: 2, GS: 1, AS: 1, ENG: 1, PL: 4 },
-      4: { CS: 0, MATH: 0, IS: 2, HRD: 3, OS: 3, COMM: 2, GS: 1, AS: 1, ENG: 1, PL: 5 },
-      5: { CS: 0, MATH: 0, IS: 2, HRD: 4, OS: 4, COMM: 2, GS: 1, AS: 1, ENG: 1, PL: 5 }
+      1: { CS: 0, MATH: 0, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
+      2: { CS: 1, MATH: 1, IS: 2, HRD: 3, OS: 3, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 3 },
+      3: { CS: 2, MATH: 2, IS: 3, HRD: 4, OS: 4, COMM: 3, GS: 3, AS: 3, ENG: 3, PL: 4 },
+      4: { CS: 2, MATH: 2, IS: 3, HRD: 5, OS: 5, COMM: 3, GS: 3, AS: 3, ENG: 3, PL: 5 },
+      5: { CS: 3, MATH: 3, IS: 4, HRD: 5, OS: 5, COMM: 4, GS: 4, AS: 4, ENG: 4, PL: 5 }
+    }
+  },
+  {
+    id: 'minor10',
+    question: "How interested are you in business strategy and innovation?",
+    description: "From 1 (Not interested) to 5 (Very interested)",
+    scores: {
+      1: { CS: 0, MATH: 0, IS: 0, HRD: 0, OS: 0, COMM: 0, GS: 0, AS: 0, ENG: 0, PL: 0 },
+      2: { CS: 1, MATH: 1, IS: 3, HRD: 3, OS: 3, COMM: 2, GS: 3, AS: 3, ENG: 2, PL: 3 },
+      3: { CS: 2, MATH: 2, IS: 4, HRD: 4, OS: 4, COMM: 3, GS: 4, AS: 4, ENG: 3, PL: 4 },
+      4: { CS: 2, MATH: 2, IS: 5, HRD: 5, OS: 5, COMM: 3, GS: 5, AS: 5, ENG: 3, PL: 5 },
+      5: { CS: 3, MATH: 3, IS: 5, HRD: 5, OS: 5, COMM: 4, GS: 5, AS: 5, ENG: 4, PL: 5 }
+    }
+  },
+  {
+    id: 'minor11',
+    question: "How do you prefer to solve problems?",
+    description: "From 1 (Intuitive/Creative) to 5 (Analytical/Systematic)",
+    scores: {
+      1: { CS: 0, MATH: 0, IS: 2, HRD: 3, OS: 2, COMM: 4, GS: 2, AS: 3, ENG: 4, PL: 2 },
+      2: { CS: 1, MATH: 1, IS: 3, HRD: 3, OS: 3, COMM: 4, GS: 3, AS: 3, ENG: 4, PL: 3 },
+      3: { CS: 3, MATH: 3, IS: 3, HRD: 3, OS: 3, COMM: 3, GS: 3, AS: 3, ENG: 3, PL: 3 },
+      4: { CS: 4, MATH: 4, IS: 2, HRD: 2, OS: 3, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 3 },
+      5: { CS: 5, MATH: 5, IS: 1, HRD: 2, OS: 2, COMM: 1, GS: 2, AS: 2, ENG: 1, PL: 2 }
+    }
+  },
+  {
+    id: 'minor12',
+    question: "How do you prefer to work?",
+    description: "From 1 (Independently) to 5 (In teams)",
+    scores: {
+      1: { CS: 4, MATH: 4, IS: 1, HRD: 1, OS: 1, COMM: 1, GS: 2, AS: 2, ENG: 2, PL: 1 },
+      2: { CS: 3, MATH: 3, IS: 2, HRD: 2, OS: 2, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 2 },
+      3: { CS: 2, MATH: 2, IS: 3, HRD: 3, OS: 3, COMM: 3, GS: 3, AS: 3, ENG: 3, PL: 3 },
+      4: { CS: 1, MATH: 1, IS: 4, HRD: 4, OS: 4, COMM: 4, GS: 4, AS: 4, ENG: 4, PL: 4 },
+      5: { CS: 1, MATH: 1, IS: 5, HRD: 5, OS: 5, COMM: 5, GS: 5, AS: 5, ENG: 5, PL: 5 }
+    }
+  },
+  {
+    id: 'minor13',
+    question: "How comfortable are you with ambiguity and uncertainty?",
+    description: "From 1 (Prefer clear structure) to 5 (Comfortable with uncertainty)",
+    scores: {
+      1: { CS: 4, MATH: 5, IS: 1, HRD: 2, OS: 2, COMM: 1, GS: 1, AS: 1, ENG: 2, PL: 2 },
+      2: { CS: 3, MATH: 4, IS: 2, HRD: 2, OS: 3, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 3 },
+      3: { CS: 2, MATH: 3, IS: 3, HRD: 3, OS: 3, COMM: 3, GS: 3, AS: 3, ENG: 3, PL: 3 },
+      4: { CS: 1, MATH: 2, IS: 4, HRD: 4, OS: 4, COMM: 4, GS: 4, AS: 4, ENG: 4, PL: 4 },
+      5: { CS: 1, MATH: 1, IS: 5, HRD: 5, OS: 4, COMM: 5, GS: 5, AS: 5, ENG: 5, PL: 4 }
+    }
+  },
+  {
+    id: 'minor14',
+    question: "How do you prefer to learn new concepts?",
+    description: "From 1 (Through practice) to 5 (Through theory)",
+    scores: {
+      1: { CS: 2, MATH: 1, IS: 3, HRD: 4, OS: 4, COMM: 4, GS: 3, AS: 3, ENG: 4, PL: 4 },
+      2: { CS: 3, MATH: 2, IS: 3, HRD: 4, OS: 4, COMM: 4, GS: 3, AS: 3, ENG: 4, PL: 4 },
+      3: { CS: 3, MATH: 3, IS: 3, HRD: 3, OS: 3, COMM: 3, GS: 3, AS: 3, ENG: 3, PL: 3 },
+      4: { CS: 4, MATH: 4, IS: 2, HRD: 2, OS: 2, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 2 },
+      5: { CS: 5, MATH: 5, IS: 1, HRD: 1, OS: 1, COMM: 1, GS: 2, AS: 2, ENG: 1, PL: 1 }
+    }
+  },
+  {
+    id: 'minor15',
+    question: "What's your preferred pace of work?",
+    description: "From 1 (Steady/Methodical) to 5 (Fast-paced/Dynamic)",
+    scores: {
+      1: { CS: 3, MATH: 4, IS: 1, HRD: 2, OS: 2, COMM: 1, GS: 2, AS: 2, ENG: 1, PL: 2 },
+      2: { CS: 3, MATH: 3, IS: 2, HRD: 2, OS: 2, COMM: 2, GS: 2, AS: 2, ENG: 2, PL: 2 },
+      3: { CS: 3, MATH: 2, IS: 3, HRD: 3, OS: 3, COMM: 3, GS: 3, AS: 3, ENG: 3, PL: 3 },
+      4: { CS: 2, MATH: 1, IS: 4, HRD: 4, OS: 4, COMM: 4, GS: 4, AS: 4, ENG: 4, PL: 4 },
+      5: { CS: 1, MATH: 1, IS: 5, HRD: 5, OS: 5, COMM: 5, GS: 5, AS: 5, ENG: 5, PL: 5 }
     }
   }
 ];
@@ -409,7 +469,54 @@ export const minorDescriptions = {
     keySkills: ["Mathematical Analysis", "Statistical Methods", "Quantitative Reasoning", "Problem Solving"],
     careers: ["Financial Analyst", "Data Analyst", "Risk Manager", "Quantitative Researcher"]
   },
-  // ... add descriptions for all other minors
+  IS: {
+    name: "Minor in International Studies",
+    description: "Great for students interested in global business and cross-cultural management. Enhances understanding of international markets.",
+    keySkills: ["Cross-cultural Communication", "Global Market Analysis", "International Relations", "Strategic Thinking"],
+    careers: ["International Business Developer", "Global Market Analyst", "Trade Specialist", "Cultural Liaison Officer"]
+  },
+  HRD: {
+    name: "Minor in Human Resource Development",
+    description: "Focuses on people management and organizational development. Perfect for future leaders and managers.",
+    keySkills: ["People Management", "Organizational Development", "Training & Development", "Employee Relations"],
+    careers: ["HR Manager", "Training Coordinator", "Organizational Development Specialist", "Talent Manager"]
+  },
+  OS: {
+    name: "Minor in Organizational Studies",
+    description: "Explores organizational behavior and management principles. Ideal for future business leaders.",
+    keySkills: ["Leadership", "Organizational Behavior", "Change Management", "Strategic Planning"],
+    careers: ["Management Consultant", "Business Analyst", "Operations Manager", "Change Management Specialist"]
+  },
+  COMM: {
+    name: "Minor in Communication Studies",
+    description: "Develops effective communication and media skills. Essential for business communication and marketing roles.",
+    keySkills: ["Business Communication", "Media Relations", "Content Strategy", "Public Speaking"],
+    careers: ["Communications Manager", "PR Specialist", "Marketing Coordinator", "Media Relations Manager"]
+  },
+  GS: {
+    name: "Minor in Global Studies",
+    description: "Focuses on global markets and international business environments. Perfect for students aiming for international careers.",
+    keySkills: ["Global Business", "Cultural Awareness", "International Relations", "Market Analysis"],
+    careers: ["Global Business Developer", "International Project Manager", "Cross-cultural Consultant", "Trade Analyst"]
+  },
+  AS: {
+    name: "Minor in African Studies",
+    description: "Specializes in African markets and business environments. Ideal for those interested in emerging markets.",
+    keySkills: ["Regional Expertise", "Market Analysis", "Cultural Understanding", "Business Development"],
+    careers: ["Regional Business Developer", "Market Entry Specialist", "Cultural Consultant", "Trade Relations Manager"]
+  },
+  ENG: {
+    name: "Minor in English Studies",
+    description: "Enhances business communication and writing skills. Valuable for international business and content creation.",
+    keySkills: ["Business Writing", "Content Creation", "Communication", "Critical Analysis"],
+    careers: ["Business Communication Specialist", "Content Manager", "Technical Writer", "Editorial Manager"]
+  },
+  PL: {
+    name: "Minor in Professional Leadership",
+    description: "Develops leadership and management capabilities. Essential for future business leaders and entrepreneurs.",
+    keySkills: ["Leadership", "Strategic Planning", "Team Management", "Decision Making"],
+    careers: ["Business Leader", "Project Manager", "Entrepreneurship", "Operations Director"]
+  }
 };
 
 export const shssQuestions = [
