@@ -13,6 +13,7 @@ import PageTransition from './components/PageTransition';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import DotBackground from './components/DotBackground';
+import { Analytics } from '@vercel/analytics/react'
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -47,6 +48,7 @@ export default function App() {
           <Footer />
         </div>
       </Router>
+      <Analytics />
     </div>
   );
 }
