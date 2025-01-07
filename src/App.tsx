@@ -48,7 +48,14 @@ export default function App() {
           <Footer />
         </div>
       </Router>
-      <Analytics />
+      {process.env.NODE_ENV === 'production' && (
+        <Analytics
+          beforeSend={(event) => {
+            if (window.location.hostname === 'localhost') return null;
+            return event;
+          }}
+        />
+      )}
     </div>
   );
 }
