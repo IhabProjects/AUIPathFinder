@@ -47,5 +47,3 @@ AUIPathFinder is an interactive web application designed to help Al Akhawayn Uni
   - Component animations
   - Interactive feedback
 - **Error Handling**: Comprehensive error states and user feedback
-
-## Project Structure
